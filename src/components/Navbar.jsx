@@ -23,7 +23,6 @@ const Navbar = () => {
        <div>
         <Link to='/fav'>Favourites</Link>
        </div>
-       <div>Contact us</div>
        </div>
     </div>
     </nav>
