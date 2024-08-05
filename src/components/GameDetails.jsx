@@ -39,9 +39,9 @@ const GameDetails = () => {
     <Container>
       <div
         key={gameData.id}
-        className="flex flex-col justify-center h-auto w-auto place-items-center"
+        className="flex flex-col justify-center h-auto w-auto place-items-center m-2"
       >
-        <div className="w-[500px] p-5">
+        <div className="sm:w-[500px] sm:p-5">
           <img
             src={gameData.thumbnail}
             alt={gameData.title}
@@ -50,9 +50,9 @@ const GameDetails = () => {
         </div>
         <div>
           <div className="sm:text-center p-3">
-            <h1 className="text-4xl font-semibold">{gameData.title}</h1>
-            <p className="text-2xl font-mono">Genre:{gameData.genre}</p>
-            <p className="text-xl font-mono text-green-600">
+            <h1 className="sm:text-4xl font-semibold">{gameData.title}</h1>
+            <p className="sm:text-2xl font-mono">Genre:{gameData.genre}</p>
+            <p className="sm:text-xl font-mono text-green-600">
               Platform:{gameData.platform}
             </p>
             <p className="text-xl font-mono text-green-600">
@@ -62,7 +62,7 @@ const GameDetails = () => {
               Developer:{gameData.developer}
             </p>
 
-            <p className="text-xl font-mono text-green-500">
+            <p className="sm:text-xl font-mono text-green-500">
               {gameData.description}
             </p>
           </div>

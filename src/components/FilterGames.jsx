@@ -18,12 +18,12 @@ const FilterGames = ({onFilter}) => {
   return (
     <div className="flex m-5 space-x-3">
        <div>
-       <select id="sort" value={sortOrder} onChange={handleSortChange} className="p-1 bg-black">
+       <select id="sort" value={sortOrder} onChange={handleSortChange} className="p-1 bg-black m-2 rounded-md">
           <option value="release-date">Release Date</option>
           <option value="popularity">Popularity</option>
           <option value="alphabetical">Alphabetical</option>
         </select>
-       <select value={genre} onChange={handleGenreChange} className="p-1 bg-black">
+       <select value={genre} onChange={handleGenreChange} className="p-1 bg-black m-2 rounded-md">
        <option value="">All Genres</option>
         <option value="Shooter">Shooter</option>
         <option value="MMORPG">MMORPG</option>
@@ -45,7 +45,7 @@ const FilterGames = ({onFilter}) => {
       </select>
        </div>
        <div>
-       <button className="w-16 bg-white text-black rounded-lg border-none p-1 outline-none shadow-lg" onClick={handleFilter}>
+       <button className="w-16 bg-white text-black rounded-lg border-none p-1 outline-none shadow-lg mt-2" onClick={handleFilter}>
             Filter
         </button>
        </div>
